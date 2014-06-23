@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <vector>
+#include <queue>
+#include <stack>
+#include <set>
+#include <map>
+#include <algorithm>
+#include <sstream>
+#include <tr1/unordered_set>
+#include <ctime>
+
+using namespace std;
+
+bool can_cross(vector<bool> r,int pos,int v){
+	if(r[p]==-1){return false};
+	if(p>=r.size()){return true};
+
+	int nextp = p;
+	for(int i=-1;i<=1;i++)
+	{
+		int nv = v + i;
+		nextp += nv;
+		if(m[nextp][nv]!=-1){
+			return 
+		}
+
+		if(can_cross(r,nextp,nv)){
+			m[nextp][nv] = true;
+			return true;
+		}
+	}
+	return ;
+}
